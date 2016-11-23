@@ -1,8 +1,7 @@
 package com.sd.Inheritance;
 
-public class Rectangle{
-	boolean isSel = false;
-	String name = "Rectangle";
+public class Parallelogram extends Rectangle{
+	String name = "Parallelogram";
 
 	void setSelected(boolean b){
 		this.isSel = b;
