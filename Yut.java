@@ -1,32 +1,32 @@
 package com.sd.DiceFinal;
 
-public class Dice{
+public class Yut extends Dice{
 	private int number = 0;
-	public String yut = "";
+
 	public void roll() {
 		number = (int)(Math.random()*6+1);
 		if(number == 1){
-			yut = " ";
+			yut = "µµ";
 		}
 		else if(number == 2){
-			yut = " ";
+			yut = "°³";
 		}
 		else if(number == 3){
-			yut = " ";
+			yut = "°É";
 		}
 		else if(number == 4){
-			yut = " ";
+			yut = "À·";
 		}
 		else if(number == 5){
-			yut = " ";
+			yut = "¸ğ";
 		}
 		else if(number == 6){
-			number = 6;
-			yut = " ";
+			number = -1;
+			yut = "»ªµµ";
 		}
 		System.out.println(number + yut);
 
-	}
+	}	
 	public int getNum() {
 		return this.number;
 	}

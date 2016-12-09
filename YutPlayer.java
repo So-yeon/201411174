@@ -1,20 +1,21 @@
 package com.sd.DiceFinal;
 
-public class Player{
+public class YutPlayer {
 	public String name = null;
 	int num = 0;
 	int point = 0;
-	
-	public Player(String _name){
+
+	public YutPlayer(String _name){
 		name = _name;
 	}
 
 	public void play() {
-		Dice d = new Dice();
-		d.roll();
-		num += d.getNum();
+		Yut y = new Yut();
+		y.roll();
+		num += y.getNum();
 		point += num;
 	}
+
 	public int getNum() {
 		 return this.num;
 	}
